@@ -7,11 +7,9 @@
 
 * Gulp automation
 * Express server
-* Handlebars templating
+* React UI
 * SASS styling (SCSS)
 * CommonJS with Webpack
-* Unit testing with Mocha and Chai
-* Test coverage with Istanbul
 
 ## Other dependencies
 
@@ -21,7 +19,7 @@
 ## This repository uses semantic versioning
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
-* MAJOR version when you make incompatible API changes, 
+* MAJOR version when you make incompatible API changes,
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
