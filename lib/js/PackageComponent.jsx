@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
-import PackageHeader from './PackageHeader';
-import PackageList from './PackageList';
+import PackageContainer from './PackageContainer';
 
 function PackageComponent(model) {
 
@@ -20,12 +19,35 @@ function PackageComponent(model) {
 		data.containerId = $dataContainer.attr('id');
 	};
 
+  function bindUserActions() {
+    // hover effect
+    const $table = $('.package-container'),
+          $columnTrs = $table.find('tr'),
+          $columnTds = $columnTrs.find('td');
+
+    let columnIndex,
+        $hoveredCell;
+
+    $columnTds.hover(function() {
+      $hoveredCell = $(this);
+      columnIndex = $hoveredCell.index();
+
+      if (columnIndex) {
+        $columnTrs.each(function() {
+          $('td', this).eq(columnIndex).addClass('hovering-column');
+        });
+      }
+    }, () => {
+      $columnTrs.each(function() {
+          $('td', this).eq(columnIndex).removeClass('hovering-column');
+        });
+    });
+  };
+
 	function renderComponent() {
+
 		ReactDOM.render(
-		  <div className="package-container">
-        <PackageHeader packageHeaderText={data.packageHeaderText} />
-        <PackageList model={data} />
-      </div>,
+      <PackageContainer model={data} events={bindUserActions} />,
 		  document.getElementById(data.containerId)
 		);
 	};

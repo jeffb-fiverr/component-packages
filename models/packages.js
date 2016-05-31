@@ -6,33 +6,34 @@ module.exports = {
 			"currencySymbol" : "$",
 			"price" : "15",
 			"description" : {
-				"descriptionTitle" : "Basic",
+        "descriptionLabel" : "Description",
+				"descriptionTitle" : "BASIC",
 				"descriptionText" : "deliver one logo concept with 300dpi jpeg file"
 			},
 			"features" : [
 				{
 					"type" : "boolean",
-					"title" : "High Resolution",
+					"label" : "High Resolution",
 					"value" : true
 				},
 				{
 					"type" : "boolean",
-					"title" : "Logo Transparency",
+					"label" : "Logo Transparency",
 					"value" : false
 				},
 				{
 					"type" : "boolean",
-					"title" : "Source File",
+					"label" : "Source File",
 					"value" : false
 				},
 				{
 					"type" : "text",
-					"title" : "Revisions",
+					"label" : "Revisions",
 					"value" : "1"
 				},
 				{
 					"type" : "input",
-					"title" : "Delivery Time",
+					"label" : "Delivery Time",
 					"options" : [
 						{
 							"name" : "delivery-time",
@@ -56,33 +57,34 @@ module.exports = {
 			"currencySymbol" : "$",
 			"price" : "40",
 			"description" : {
-				"descriptionTitle" : "Premium",
+        "descriptionLabel" : "Description",
+				"descriptionTitle" : "PREMIUM",
 				"descriptionText" : "Package includes 3 Logo concepts. High Quality logos. Source Files."
 			},
 			"features" : [
 				{
 					"type" : "boolean",
-					"title" : "High Resolution",
+					"label" : "High Resolution",
 					"value" : true
 				},
 				{
 					"type" : "boolean",
-					"title" : "Logo Transparency",
+					"label" : "Logo Transparency",
 					"value" : true
 				},
 				{
 					"type" : "boolean",
-					"title" : "Source File",
+					"label" : "Source File",
 					"value" : false
 				},
 				{
 					"type" : "text",
-					"title" : "Revisions",
+					"label" : "Revisions",
 					"value" : "3"
 				},
 				{
 					"type" : "input",
-					"title" : "Delivery Time",
+					"label" : "Delivery Time",
 					"options" : [
 						{
 							"name" : "delivery-time",
@@ -106,33 +108,34 @@ module.exports = {
 			"currencySymbol" : "$",
 			"price" : "200",
 			"description" : {
-				"descriptionTitle" : "Copyright Ownership",
+        "descriptionLabel" : "Description",
+				"descriptionTitle" : "COPYRIGHT OWNERSHIP",
 				"descriptionText" : "Extension of the Premium Package. Include Stationary Designs and copyright ownership."
 			},
 			"features" : [
 				{
 					"type" : "boolean",
-					"title" : "High Resolution",
+					"label" : "High Resolution",
 					"value" : true
 				},
 				{
 					"type" : "boolean",
-					"title" : "Logo Transparency",
+					"label" : "Logo Transparency",
 					"value" : true
 				},
 				{
 					"type" : "boolean",
-					"title" : "Source File",
+					"label" : "Source File",
 					"value" : true
 				},
 				{
 					"type" : "text",
-					"title" : "Revisions",
+					"label" : "Revisions",
 					"value" : "UNLIMITED"
 				},
 				{
 					"type" : "text",
-					"title" : "Delivery Time",
+					"label" : "Delivery Time",
 					"value" : "6 days"
 				}
 			],

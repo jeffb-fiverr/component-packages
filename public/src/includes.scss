@@ -1,2 +1,14 @@
 @import "base";
+
+@import "font-awesome-compass";
+@import "font-awesome";
+
+@import "global-shared";
+@import "global-popups-shared";
 @import "global";
+@import "global-popups";
+
+#packages-container {
+    font: 12px/120% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 610px;
+}

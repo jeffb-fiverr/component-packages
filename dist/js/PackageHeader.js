@@ -13,11 +13,29 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var PackageHeader = _react2.default.createClass({
   displayName: 'PackageHeader',
 
+  getInitialState: function getInitialState() {
+
+    return {
+      pkgLength: this.props.packages.length,
+      packageHeaderText: this.props.packageHeaderText
+    };
+  },
   render: function render() {
+
+    var colspan = this.state.pkgLength + 1;
+
     return _react2.default.createElement(
-      'header',
+      'thead',
       null,
-      this.props.packageHeaderText
+      _react2.default.createElement(
+        'tr',
+        null,
+        _react2.default.createElement(
+          'th',
+          { colSpan: colspan },
+          this.state.packageHeaderText
+        )
+      )
     );
   }
 });
